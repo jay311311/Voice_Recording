@@ -26,8 +26,103 @@ private struct OnBoardingContentView: View {
     
     fileprivate var body: some View {
         VStack{
-            Text("Onboarding!")
+            OnboardingListView(onboardingViewModel: onboardingViewModel)
+            Spacer()
+            StartButtonView()
         }
+        .edgesIgnoringSafeArea(.top)
+    }
+}
+
+// MARK: OnboardingListView
+private struct OnboardingListView: View {
+    @ObservedObject private var onboardingViewModel: OnboardingViewModel
+    @State private var selectedIndex: Int
+    
+    fileprivate init(
+        onboardingViewModel: OnboardingViewModel,
+        selectedIndex: Int = 0
+    ) {
+        self.onboardingViewModel = onboardingViewModel
+        self.selectedIndex = selectedIndex
+    }
+    
+    fileprivate var body: some View {
+        TabView(selection: $selectedIndex) {
+            ForEach(Array(onboardingViewModel.onboardingModel.enumerated()), id: \.element) {index, onboardingContent  in
+                OnboardingCellView(onboardingContent: onboardingContent)
+                    .tag(index)
+            }
+        }
+        .tabViewStyle(.page(indexDisplayMode: .never))
+        .frame(width: UIScreen.main.bounds.width, height:  UIScreen.main.bounds.height / 1.5)
+        .background(
+            selectedIndex % 2 == 0
+            ? Color.customBackgroundGreen
+            : Color.customBeige
+        )
+        .clipped()
+    }
+}
+
+// MARK: OnboardingCellView
+private struct OnboardingCellView: View {
+    private var onboardingContent: OnboardingModel
+    
+    fileprivate init(onboardingContent: OnboardingModel) {
+        self.onboardingContent = onboardingContent
+    }
+    
+    fileprivate var body: some View {
+        VStack{
+            Image(onboardingContent.imageFileName)
+                .resizable()
+                .scaledToFit()
+                .padding(.top, 62)
+                
+            HStack{
+                Spacer()
+                
+                VStack{
+                    Spacer()
+                        .frame(height: 46)
+                    
+                    Text(onboardingContent.title)
+                        .font(.system(size: 16, weight: .bold))
+                    
+                    Spacer()
+                        .frame(height: 5)
+                    
+                    Text(onboardingContent.subTitle)
+                        .font(.system(size: 16))
+                }
+                Spacer()
+            }
+            .background(Color.customWhite)
+            .cornerRadius(0)
+        }
+        .shadow(radius: 10)
+    }
+}
+
+// MARK: StartButtonView
+
+private struct StartButtonView: View {
+    fileprivate var body: some View{
+        Button {
+            // TODO: Tap Action
+        } label: {
+            HStack{
+                Text("Start")
+                    .font(.system(size: 16, weight: .medium))
+                    .foregroundColor(.customGreen1)
+                
+                Image(systemName: "arrow.right")
+                    .renderingMode(.template)
+                    .foregroundColor(.customGreen1)
+            }
+        }
+        .padding(.bottom, 50)
     }
 }
 

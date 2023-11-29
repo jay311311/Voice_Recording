@@ -8,30 +8,30 @@
 import Foundation
 
 class OnboardingViewModel: ObservableObject {
-    @Published var onboardingContents:[OnboardingContent]
+    @Published var onboardingModel:[OnboardingModel]
     
-    init(onboardingContents: [OnboardingContent] = [
+    init(onboardingModel: [OnboardingModel] = [
         .init(
-            imageImage: "test_onboarding",
+            imageFileName: "test_onboarding",
             title: "To-Do List",
-            subTitle: "What you need to do anytime, anywhere at a glance"
+            subTitle: "What you need to do anytime, anywhere"
         ),
         .init(
-            imageImage: "test_onboarding",
+            imageFileName: "test_onboarding",
             title: "Smart Memo",
             subTitle: "Write your memmo anywhere"
         ),
         .init(
-            imageImage: "test_onboarding",
+            imageFileName: "test_onboarding",
             title: "Voice Recording",
             subTitle: "Record your Voice memo"
         ),
         .init(
-            imageImage: "test_onboarding",
+            imageFileName: "test_onboarding",
             title: "Accurate timer",
             subTitle: "Check your time"
         )
     ]) {
-        self.onboardingContents = onboardingContents
+        self.onboardingModel = onboardingModel
     }
 }

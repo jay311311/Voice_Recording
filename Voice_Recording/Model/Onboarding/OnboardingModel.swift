@@ -1,5 +1,5 @@
 //
-//  OnboardingContent.swift
+//  OnboardingModel.swift
 //  Voice_Recording
 //
 //  Created by Jooeun Kim on 2023/11/29.
@@ -7,15 +7,15 @@
 
 import Foundation
 
-struct OnboardingContent {
-    var imageImage: String
+struct OnboardingModel: Hashable {
+    var imageFileName: String
     var title: String
     var subTitle: String
     
-    init(imageImage: String,
+    init(imageFileName: String,
          title: String,
          subTitle: String) {
-        self.imageImage = imageImage
+        self.imageFileName = imageFileName
         self.title = title
         self.subTitle = subTitle
     }

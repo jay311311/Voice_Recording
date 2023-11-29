@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		67AF57EC2B171CA600712870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67AF57EB2B171CA600712870 /* LaunchScreen.storyboard */; };
 		67AF57EF2B171F8800712870 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF57EE2B171F8800712870 /* Color+Extension.swift */; };
-		67AF57F22B17255A00712870 /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF57F12B17255A00712870 /* OnboardingContent.swift */; };
+		67AF57F22B17255A00712870 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF57F12B17255A00712870 /* OnboardingModel.swift */; };
 		67CDD07B2B16283B006DD818 /* Voice_RecordingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDD07A2B16283B006DD818 /* Voice_RecordingApp.swift */; };
 		67CDD07D2B16283B006DD818 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDD07C2B16283B006DD818 /* ContentView.swift */; };
 		67CDD07F2B16283C006DD818 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67CDD07E2B16283C006DD818 /* Assets.xcassets */; };
@@ -48,7 +48,7 @@
 /* Begin PBXFileReference section */
 		67AF57EB2B171CA600712870 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67AF57EE2B171F8800712870 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
-		67AF57F12B17255A00712870 /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
+		67AF57F12B17255A00712870 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		67CDD0772B16283B006DD818 /* Voice_Recording.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voice_Recording.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CDD07A2B16283B006DD818 /* Voice_RecordingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice_RecordingApp.swift; sourceTree = "<group>"; };
 		67CDD07C2B16283B006DD818 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		67AF57F02B17253A00712870 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				67AF57F12B17255A00712870 /* OnboardingContent.swift */,
+				67AF57F12B17255A00712870 /* OnboardingModel.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -346,7 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67AF57F22B17255A00712870 /* OnboardingContent.swift in Sources */,
+				67AF57F22B17255A00712870 /* OnboardingModel.swift in Sources */,
 				67CDD0B32B17114C006DD818 /* OnboardingViewModel.swift in Sources */,
 				67AF57EF2B171F8800712870 /* Color+Extension.swift in Sources */,
 				67CDD0AA2B1710A4006DD818 /* AppDelegate.swift in Sources */,

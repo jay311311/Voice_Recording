@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67AF57EC2B171CA600712870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67AF57EB2B171CA600712870 /* LaunchScreen.storyboard */; };
+		67AF57EF2B171F8800712870 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF57EE2B171F8800712870 /* Color+Extension.swift */; };
+		67AF57F22B17255A00712870 /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF57F12B17255A00712870 /* OnboardingContent.swift */; };
 		67CDD07B2B16283B006DD818 /* Voice_RecordingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDD07A2B16283B006DD818 /* Voice_RecordingApp.swift */; };
 		67CDD07D2B16283B006DD818 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDD07C2B16283B006DD818 /* ContentView.swift */; };
 		67CDD07F2B16283C006DD818 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67CDD07E2B16283C006DD818 /* Assets.xcassets */; };
@@ -14,6 +17,15 @@
 		67CDD08C2B16283C006DD818 /* Voice_RecordingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDD08B2B16283C006DD818 /* Voice_RecordingTests.swift */; };
 		67CDD0962B16283C006DD818 /* Voice_RecordingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDD0952B16283C006DD818 /* Voice_RecordingUITests.swift */; };
 		67CDD0982B16283C006DD818 /* Voice_RecordingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDD0972B16283C006DD818 /* Voice_RecordingUITestsLaunchTests.swift */; };
+		67CDD0AA2B1710A4006DD818 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDD0A92B1710A4006DD818 /* AppDelegate.swift */; };
+		67CDD0AB2B1710A4006DD818 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDD0A92B1710A4006DD818 /* AppDelegate.swift */; };
+		67CDD0AC2B1710A4006DD818 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDD0A92B1710A4006DD818 /* AppDelegate.swift */; };
+		67CDD0AF2B1710FB006DD818 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDD0AE2B1710FB006DD818 /* OnboardingView.swift */; };
+		67CDD0B02B1710FB006DD818 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDD0AE2B1710FB006DD818 /* OnboardingView.swift */; };
+		67CDD0B12B1710FB006DD818 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDD0AE2B1710FB006DD818 /* OnboardingView.swift */; };
+		67CDD0B32B17114C006DD818 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDD0B22B17114C006DD818 /* OnboardingViewModel.swift */; };
+		67CDD0B42B17114D006DD818 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDD0B22B17114C006DD818 /* OnboardingViewModel.swift */; };
+		67CDD0B52B17114D006DD818 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDD0B22B17114C006DD818 /* OnboardingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67AF57EB2B171CA600712870 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		67AF57EE2B171F8800712870 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		67AF57F12B17255A00712870 /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
 		67CDD0772B16283B006DD818 /* Voice_Recording.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voice_Recording.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CDD07A2B16283B006DD818 /* Voice_RecordingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice_RecordingApp.swift; sourceTree = "<group>"; };
 		67CDD07C2B16283B006DD818 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +59,9 @@
 		67CDD0912B16283C006DD818 /* Voice_RecordingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Voice_RecordingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CDD0952B16283C006DD818 /* Voice_RecordingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice_RecordingUITests.swift; sourceTree = "<group>"; };
 		67CDD0972B16283C006DD818 /* Voice_RecordingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice_RecordingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67CDD0A92B1710A4006DD818 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		67CDD0AE2B1710FB006DD818 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		67CDD0B22B17114C006DD818 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +89,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67AF57ED2B171E8200712870 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				67AF57EE2B171F8800712870 /* Color+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		67AF57F02B17253A00712870 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				67AF57F12B17255A00712870 /* OnboardingContent.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		67CDD06E2B16283B006DD818 = {
 			isa = PBXGroup;
 			children = (
@@ -94,7 +128,11 @@
 		67CDD0792B16283B006DD818 /* Voice_Recording */ = {
 			isa = PBXGroup;
 			children = (
-				67CDD07A2B16283B006DD818 /* Voice_RecordingApp.swift */,
+				67CDD0A42B170F1E006DD818 /* App */,
+				67CDD0A52B170F40006DD818 /* Core */,
+				67CDD0A62B170F53006DD818 /* Component */,
+				67CDD0A82B170F69006DD818 /* Model */,
+				67CDD0A72B170F5E006DD818 /* Feature */,
 				67CDD07C2B16283B006DD818 /* ContentView.swift */,
 				67CDD07E2B16283C006DD818 /* Assets.xcassets */,
 				67CDD0802B16283C006DD818 /* Preview Content */,
@@ -125,6 +163,56 @@
 				67CDD0972B16283C006DD818 /* Voice_RecordingUITestsLaunchTests.swift */,
 			);
 			path = Voice_RecordingUITests;
+			sourceTree = "<group>";
+		};
+		67CDD0A42B170F1E006DD818 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				67CDD07A2B16283B006DD818 /* Voice_RecordingApp.swift */,
+				67CDD0A92B1710A4006DD818 /* AppDelegate.swift */,
+				67AF57EB2B171CA600712870 /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		67CDD0A52B170F40006DD818 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				67AF57ED2B171E8200712870 /* Extension */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		67CDD0A62B170F53006DD818 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		67CDD0A72B170F5E006DD818 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				67CDD0AD2B1710D7006DD818 /* Onboarding */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		67CDD0A82B170F69006DD818 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67AF57F02B17253A00712870 /* Onboarding */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67CDD0AD2B1710D7006DD818 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				67CDD0AE2B1710FB006DD818 /* OnboardingView.swift */,
+				67CDD0B22B17114C006DD818 /* OnboardingViewModel.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67AF57EC2B171CA600712870 /* LaunchScreen.storyboard in Resources */,
 				67CDD0822B16283C006DD818 /* Preview Assets.xcassets in Resources */,
 				67CDD07F2B16283C006DD818 /* Assets.xcassets in Resources */,
 			);
@@ -257,6 +346,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67AF57F22B17255A00712870 /* OnboardingContent.swift in Sources */,
+				67CDD0B32B17114C006DD818 /* OnboardingViewModel.swift in Sources */,
+				67AF57EF2B171F8800712870 /* Color+Extension.swift in Sources */,
+				67CDD0AA2B1710A4006DD818 /* AppDelegate.swift in Sources */,
+				67CDD0AF2B1710FB006DD818 /* OnboardingView.swift in Sources */,
 				67CDD07D2B16283B006DD818 /* ContentView.swift in Sources */,
 				67CDD07B2B16283B006DD818 /* Voice_RecordingApp.swift in Sources */,
 			);
@@ -266,7 +360,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67CDD0B02B1710FB006DD818 /* OnboardingView.swift in Sources */,
+				67CDD0AB2B1710A4006DD818 /* AppDelegate.swift in Sources */,
 				67CDD08C2B16283C006DD818 /* Voice_RecordingTests.swift in Sources */,
+				67CDD0B42B17114D006DD818 /* OnboardingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +371,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67CDD0B52B17114D006DD818 /* OnboardingViewModel.swift in Sources */,
+				67CDD0AC2B1710A4006DD818 /* AppDelegate.swift in Sources */,
+				67CDD0B12B1710FB006DD818 /* OnboardingView.swift in Sources */,
 				67CDD0962B16283C006DD818 /* Voice_RecordingUITests.swift in Sources */,
 				67CDD0982B16283C006DD818 /* Voice_RecordingUITestsLaunchTests.swift in Sources */,
 			);
@@ -420,11 +520,13 @@
 				DEVELOPMENT_TEAM = 8G9QJBS8AT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Voice-Recording-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,11 +551,13 @@
 				DEVELOPMENT_TEAM = 8G9QJBS8AT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Voice-Recording-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

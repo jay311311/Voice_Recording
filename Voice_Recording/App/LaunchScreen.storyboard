@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MpM-ed-ulc">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="865"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="trW-X0-ulE">
+                                        <rect key="frame" x="109.66666666666669" y="372.33333333333337" width="174" height="120"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="124.00000000000003" id="3FU-aj-rTi"/>
+                                            <constraint firstAttribute="width" constant="174" id="EW4-E8-bNJ"/>
+                                        </constraints>
+                                        <imageReference key="image" image="mic" catalog="system" symbolScale="small"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" cyan="0.34000000000000002" magenta="0.02" yellow="0.81999999999999995" black="0.02" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="trW-X0-ulE" firstAttribute="centerX" secondItem="MpM-ed-ulc" secondAttribute="centerX" id="exs-tv-J4a"/>
+                                    <constraint firstItem="trW-X0-ulE" firstAttribute="centerY" secondItem="MpM-ed-ulc" secondAttribute="centerY" id="f2h-0u-5KG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MpM-ed-ulc" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" constant="-6" id="1Gz-d6-Pak"/>
+                            <constraint firstItem="MpM-ed-ulc" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Oya-Z4-urk"/>
+                            <constraint firstItem="MpM-ed-ulc" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="V8l-gM-cio"/>
+                            <constraint firstItem="MpM-ed-ulc" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" constant="13" id="nPs-jp-2cR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mic" catalog="system" width="110" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -10,6 +10,11 @@
 		67AF57EC2B171CA600712870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67AF57EB2B171CA600712870 /* LaunchScreen.storyboard */; };
 		67AF57EF2B171F8800712870 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF57EE2B171F8800712870 /* Color+Extension.swift */; };
 		67AF57F22B17255A00712870 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF57F12B17255A00712870 /* OnboardingModel.swift */; };
+		67AF57F52B18D0C800712870 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF57F42B18D0C800712870 /* Path.swift */; };
+		67AF57F72B18D0D000712870 /* PathType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF57F62B18D0D000712870 /* PathType.swift */; };
+		67AF57FE2B18D46500712870 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF57FD2B18D46500712870 /* TodoView.swift */; };
+		67AF58002B18D47900712870 /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF57FF2B18D47900712870 /* MemoView.swift */; };
+		67AF58022B18D49000712870 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF58012B18D49000712870 /* HomeView.swift */; };
 		67CDD07B2B16283B006DD818 /* Voice_RecordingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDD07A2B16283B006DD818 /* Voice_RecordingApp.swift */; };
 		67CDD07D2B16283B006DD818 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDD07C2B16283B006DD818 /* ContentView.swift */; };
 		67CDD07F2B16283C006DD818 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67CDD07E2B16283C006DD818 /* Assets.xcassets */; };
@@ -49,6 +54,11 @@
 		67AF57EB2B171CA600712870 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67AF57EE2B171F8800712870 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		67AF57F12B17255A00712870 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		67AF57F42B18D0C800712870 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		67AF57F62B18D0D000712870 /* PathType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathType.swift; sourceTree = "<group>"; };
+		67AF57FD2B18D46500712870 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		67AF57FF2B18D47900712870 /* MemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
+		67AF58012B18D49000712870 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		67CDD0772B16283B006DD818 /* Voice_Recording.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voice_Recording.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CDD07A2B16283B006DD818 /* Voice_RecordingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice_RecordingApp.swift; sourceTree = "<group>"; };
 		67CDD07C2B16283B006DD818 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +113,55 @@
 				67AF57F12B17255A00712870 /* OnboardingModel.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		67AF57F32B18D0A500712870 /* Path */ = {
+			isa = PBXGroup;
+			children = (
+				67AF57F42B18D0C800712870 /* Path.swift */,
+				67AF57F62B18D0D000712870 /* PathType.swift */,
+			);
+			path = Path;
+			sourceTree = "<group>";
+		};
+		67AF57F82B18D40900712870 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				67AF58012B18D49000712870 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		67AF57F92B18D41300712870 /* MemoList */ = {
+			isa = PBXGroup;
+			children = (
+				67AF57FC2B18D45700712870 /* Memo */,
+			);
+			path = MemoList;
+			sourceTree = "<group>";
+		};
+		67AF57FA2B18D41E00712870 /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				67AF57FB2B18D44700712870 /* Todo */,
+			);
+			path = TodoList;
+			sourceTree = "<group>";
+		};
+		67AF57FB2B18D44700712870 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				67AF57FD2B18D46500712870 /* TodoView.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		67AF57FC2B18D45700712870 /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+				67AF57FF2B18D47900712870 /* MemoView.swift */,
+			);
+			path = Memo;
 			sourceTree = "<group>";
 		};
 		67CDD06E2B16283B006DD818 = {
@@ -193,6 +252,9 @@
 		67CDD0A72B170F5E006DD818 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				67AF57FA2B18D41E00712870 /* TodoList */,
+				67AF57F92B18D41300712870 /* MemoList */,
+				67AF57F82B18D40900712870 /* Home */,
 				67CDD0AD2B1710D7006DD818 /* Onboarding */,
 			);
 			path = Feature;
@@ -201,6 +263,7 @@
 		67CDD0A82B170F69006DD818 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				67AF57F32B18D0A500712870 /* Path */,
 				67AF57F02B17253A00712870 /* Onboarding */,
 			);
 			path = Model;
@@ -348,9 +411,14 @@
 			files = (
 				67AF57F22B17255A00712870 /* OnboardingModel.swift in Sources */,
 				67CDD0B32B17114C006DD818 /* OnboardingViewModel.swift in Sources */,
+				67AF57FE2B18D46500712870 /* TodoView.swift in Sources */,
+				67AF57F72B18D0D000712870 /* PathType.swift in Sources */,
+				67AF57F52B18D0C800712870 /* Path.swift in Sources */,
 				67AF57EF2B171F8800712870 /* Color+Extension.swift in Sources */,
+				67AF58002B18D47900712870 /* MemoView.swift in Sources */,
 				67CDD0AA2B1710A4006DD818 /* AppDelegate.swift in Sources */,
 				67CDD0AF2B1710FB006DD818 /* OnboardingView.swift in Sources */,
+				67AF58022B18D49000712870 /* HomeView.swift in Sources */,
 				67CDD07D2B16283B006DD818 /* ContentView.swift in Sources */,
 				67CDD07B2B16283B006DD818 /* Voice_RecordingApp.swift in Sources */,
 			);

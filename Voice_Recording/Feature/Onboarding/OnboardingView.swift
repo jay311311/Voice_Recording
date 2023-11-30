@@ -9,10 +9,28 @@ import SwiftUI
 
 struct OnboardingView: View {
     @StateObject private var onboardingViewModel = OnboardingViewModel()
+    @StateObject private var pathModel = PathModel()
     
     var body: some View {
-        // TODO: - Need to implement screen transition
-        OnBoardingContentView(onboardingViewModel: onboardingViewModel)
+        NavigationStack(path: $pathModel.paths) {
+            OnBoardingContentView(onboardingViewModel: onboardingViewModel)
+                .navigationDestination(
+                    for: PathType.self,
+                    destination: { pathType in
+                        switch pathType {
+                        case .homeView:
+                            HomeView()
+                                .navigationBarBackButtonHidden()
+                        case .memoView:
+                            MemoView()
+                                .navigationBarBackButtonHidden()
+                        case .todoView:
+                            TodoView()
+                                .navigationBarBackButtonHidden()
+                        }
+                    })
+        }
+        .environmentObject(pathModel)
     }
 }
 
@@ -108,9 +126,11 @@ private struct OnboardingCellView: View {
 // MARK: StartButtonView
 
 private struct StartButtonView: View {
+    @EnvironmentObject private var pathModel: PathModel
+    
     fileprivate var body: some View{
         Button {
-            // TODO: Tap Action
+            pathModel.paths.append(.homeView)
         } label: {
             HStack{
                 Text("Start")

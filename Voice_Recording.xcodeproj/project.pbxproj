@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		673652D92B1A144D000D427A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673652D82B1A144D000D427A /* Date+Extension.swift */; };
 		67AF57EC2B171CA600712870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67AF57EB2B171CA600712870 /* LaunchScreen.storyboard */; };
 		67AF57EF2B171F8800712870 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF57EE2B171F8800712870 /* Color+Extension.swift */; };
 		67AF57F22B17255A00712870 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF57F12B17255A00712870 /* OnboardingModel.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		673652D82B1A144D000D427A /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		67AF57EB2B171CA600712870 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67AF57EE2B171F8800712870 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		67AF57F12B17255A00712870 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				67AF57EE2B171F8800712870 /* Color+Extension.swift */,
+				673652D82B1A144D000D427A /* Date+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				67AF57F52B18D0C800712870 /* Path.swift in Sources */,
 				67AF57EF2B171F8800712870 /* Color+Extension.swift in Sources */,
 				67AF58002B18D47900712870 /* MemoView.swift in Sources */,
+				673652D92B1A144D000D427A /* Date+Extension.swift in Sources */,
 				67CDD0AA2B1710A4006DD818 /* AppDelegate.swift in Sources */,
 				67CDD0AF2B1710FB006DD818 /* OnboardingView.swift in Sources */,
 				67AF58022B18D49000712870 /* HomeView.swift in Sources */,

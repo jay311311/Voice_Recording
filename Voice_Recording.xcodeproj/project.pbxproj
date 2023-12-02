@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		673652D92B1A144D000D427A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673652D82B1A144D000D427A /* Date+Extension.swift */; };
+		673652DC2B1A1C7E000D427A /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673652DB2B1A1C7E000D427A /* CustomNavigationBar.swift */; };
+		673652DE2B1A1D58000D427A /* NavigationBtnType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673652DD2B1A1D58000D427A /* NavigationBtnType.swift */; };
 		67AF57EC2B171CA600712870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67AF57EB2B171CA600712870 /* LaunchScreen.storyboard */; };
 		67AF57EF2B171F8800712870 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF57EE2B171F8800712870 /* Color+Extension.swift */; };
 		67AF57F22B17255A00712870 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF57F12B17255A00712870 /* OnboardingModel.swift */; };
@@ -53,6 +55,8 @@
 
 /* Begin PBXFileReference section */
 		673652D82B1A144D000D427A /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		673652DB2B1A1C7E000D427A /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		673652DD2B1A1D58000D427A /* NavigationBtnType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBtnType.swift; sourceTree = "<group>"; };
 		67AF57EB2B171CA600712870 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67AF57EE2B171F8800712870 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		67AF57F12B17255A00712870 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
@@ -101,6 +105,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		673652DA2B1A1AEF000D427A /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				673652DB2B1A1C7E000D427A /* CustomNavigationBar.swift */,
+				673652DD2B1A1D58000D427A /* NavigationBtnType.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
 		67AF57ED2B171E8200712870 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +261,7 @@
 		67CDD0A62B170F53006DD818 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				673652DA2B1A1AEF000D427A /* NavigationBar */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -417,7 +431,9 @@
 				67AF57FE2B18D46500712870 /* TodoView.swift in Sources */,
 				67AF57F72B18D0D000712870 /* PathType.swift in Sources */,
 				67AF57F52B18D0C800712870 /* Path.swift in Sources */,
+				673652DE2B1A1D58000D427A /* NavigationBtnType.swift in Sources */,
 				67AF57EF2B171F8800712870 /* Color+Extension.swift in Sources */,
+				673652DC2B1A1C7E000D427A /* CustomNavigationBar.swift in Sources */,
 				67AF58002B18D47900712870 /* MemoView.swift in Sources */,
 				673652D92B1A144D000D427A /* Date+Extension.swift in Sources */,
 				67CDD0AA2B1710A4006DD818 /* AppDelegate.swift in Sources */,

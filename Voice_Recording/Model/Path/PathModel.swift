@@ -1,5 +1,5 @@
 //
-//  Path.swift
+//  PathModel.swift
 //  Voice_Recording
 //
 //  Created by Jooeun Kim on 2023/11/30.

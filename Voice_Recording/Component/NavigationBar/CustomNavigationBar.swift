@@ -19,12 +19,12 @@ struct CustomNavigationBar: View {
         isDisplayRightBtn: Bool = true,
         leftBtnAction: @escaping () -> Void = {},
         rightBtnAction: @escaping () -> Void = {},
-        riightBtnType: NavigationBtnType = .edit) {
+        rightBtnType: NavigationBtnType = .edit) {
         self.isDisplayLeftBtn = isDisplayLeftBtn
         self.isDisplayRightBtn = isDisplayRightBtn
         self.leftBtnAction = leftBtnAction
         self.rightBtnAction = rightBtnAction
-        self.rightBtnType = riightBtnType
+        self.rightBtnType = rightBtnType
     }
     
     var body: some View{

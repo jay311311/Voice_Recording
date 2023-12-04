@@ -37,7 +37,6 @@ struct TodoListView: View {
             }
             
             CreateTodoBtnView()
-                .frame(width: 50, height: 50)
                 .padding(.trailing, 20)
                 .padding(.bottom, 50)
                 
@@ -78,13 +77,16 @@ private struct InfoView: View {
     fileprivate var body: some View {
         VStack(spacing: 15) {
             Spacer()
-            Image(systemName: "square.and.pencil")
-            Text("Go to the gym at 7PM")
-            Text("Hang out with friends at 7PM")
-            Text("Make a appoinment to doctor")
+            Image(systemName: "pencil")
+                .font(.system(size: 25))
+            VStack {
+                Text("Go to the gym at 7PM")
+                Text("Hang out with friends at 7PM")
+                Text("Make a appoinment to doctor")
+            }
             Spacer()
         }
-        .font(.system(size: 16))
+        .font(.system(size: 14))
         .foregroundColor(.customGray2)
     }
 }
@@ -193,6 +195,7 @@ private struct CreateTodoBtnView: View {
                 } label: {
                     Image(systemName: "pencil.circle.fill")
                         .foregroundColor(.customGreen1)
+                        .font(.system(size: 50))
                 }
 
             }

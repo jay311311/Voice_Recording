@@ -10,25 +10,25 @@ import Foundation
 extension Date {
     var formattedTime: String {
         let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "ko_KR")
+        formatter.locale = Locale(identifier: "en-CA")
         formatter.dateFormat = "a hh:mm"
         return formatter.string(from: self)
     }
     
     var formattedDay: String {
-        var now = Date()
-        var calendar = Calendar.current
-        var nowStartOfDay = calendar.startOfDay(for: now)
-        var dateStartOfDay = calendar.startOfDay(for: self)
+        let now = Date()
+        let calendar = Calendar.current
+        let nowStartOfDay = calendar.startOfDay(for: now)
+        let dateStartOfDay = calendar.startOfDay(for: self)
         
-        var differentOfDay = calendar.dateComponents([.day], from: nowStartOfDay, to: dateStartOfDay).day
+        let differentOfDay = calendar.dateComponents([.day], from: nowStartOfDay, to: dateStartOfDay).day
         
         if differentOfDay == 0 {
             return "today"
         } else {
             let formatter = DateFormatter()
-            formatter.locale = Locale(identifier: "ko_KR")
-            formatter.dateFormat = "mm dd ee"
+            formatter.locale = Locale(identifier: "en-CA")
+            formatter.dateFormat = "E, MMMM dd"
             return formatter.string(from: self)
         }
     }

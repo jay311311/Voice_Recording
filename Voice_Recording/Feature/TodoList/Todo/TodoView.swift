@@ -29,6 +29,8 @@ struct TodoView: View {
                         )
                         
                         pathModel.paths.removeLast()
+                    } else  {
+                        todoViewModel.getIsTitleEmpty(true)
                     }
                 },
                 rightBtnType: .create
@@ -52,6 +54,14 @@ struct TodoView: View {
                 .padding(.leading, 20)
             
             Spacer()
+        }
+        .alert(
+            "fill up Todo Title",
+            isPresented: $todoViewModel.isEmptyTitle
+        ) {
+            Button("OK", role: .cancel) {
+                todoViewModel.getIsTitleEmpty(true)
+            }
         }
     }
 }
@@ -83,7 +93,6 @@ private struct TodoTitleView: View {
             text: $todoViewModel.title)
         .onChange(of: todoViewModel.title) { newValue in
             todoViewModel.getIsTitleEmpty(newValue.isEmpty)
-//            print("TextField \(newValue) // \(newValue.isEmpty)")
         }
     }
 }

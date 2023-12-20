@@ -53,16 +53,6 @@ struct CustomNavigationBar: View {
                         .foregroundColor(.customBlack)
                 }
             }
-//            .alert(
-//                "Enter your todo Title",
-//                isPresented: $showingAlert) {
-//                    Button(
-//                        "OK",
-//                        role: .destructive,
-//                        action: { print("여기여기 11\(showingAlert)")}
-//                    )
-//
-//                }
         }
         .padding(.horizontal, 20)
         .frame(height: 20)

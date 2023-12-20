@@ -164,9 +164,9 @@ private struct TodoCellView: View {
                         isSelectedForRemove.toggle()
                         todoListViewModel.selectRemoveBtn(todo)
                     } label: {
-                        isSelectedForRemove ? Image(systemName: "trash") : Image(systemName: "trash.fill")
+                        isSelectedForRemove ? Image(systemName: "trash.fill") : Image(systemName: "trash")
                     }
-                    .foregroundColor(.red)
+                    .foregroundColor(isSelectedForRemove ? .red : .customGray2)
                 }
             }
             .padding(.horizontal, 20)

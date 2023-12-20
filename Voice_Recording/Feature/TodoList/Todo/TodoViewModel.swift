@@ -13,7 +13,7 @@ class TodoViewModel: ObservableObject {
     @Published var time: Date
     @Published var day: Date
     @Published var isDisplayCalendar: Bool
-    @Published var isEmptyTitle : Bool?
+    @Published var isEmptyTitle : Bool
 //    @Published var isEmptyTitle: Bool?
 
 //    static func == (lhs: TodoViewModel, rhs: TodoViewModel) -> Bool {
@@ -25,7 +25,7 @@ class TodoViewModel: ObservableObject {
         time: Date = Date(),
         day: Date = Date(),
         isDisplayCalendar: Bool = false,
-        isEmptyTitle: Bool? = nil
+        isEmptyTitle: Bool = false
 //        isEmptyTitle: Bool? = nil
     ) {
         self.title = title
@@ -44,11 +44,5 @@ extension TodoViewModel {
     
     func getIsTitleEmpty(_ isEmpty: Bool) {
         isEmptyTitle = isEmpty
-       print("setIsFillTodoTitle \(isEmpty)")
     }
-    
-//    func getTitleFocus(_ isFocus: Bool) {
-//        isEmptyTitle = isFocus
-//        print("여기isFocus \(isFocus)")
-//    }
 }

@@ -13,7 +13,7 @@ struct TodoModel: Hashable {
     var day: Date
     var selected: Bool
     
-    var comvertedDayAndTime: String {
+    var convertedDayAndTime: String {
         // ee - hh:mm 
         String("\(day.formattedDay) -  \(time.formattedTime)")
     }

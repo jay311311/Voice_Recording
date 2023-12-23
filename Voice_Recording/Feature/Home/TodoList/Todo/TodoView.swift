@@ -59,7 +59,7 @@ struct TodoView: View {
             "fill up Todo Title",
             isPresented: $todoViewModel.isEmptyTitle
         ) {
-            Button("OK", role: .cancel) {
+            Button("OK", role: .none) {
                 todoViewModel.getIsTitleEmpty(true)
             }
         }

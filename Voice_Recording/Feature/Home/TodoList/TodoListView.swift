@@ -43,7 +43,7 @@ struct TodoListView: View {
         }
         .alert(
             "Will you delete \(todoListViewModel.todosForRemove.count) list?",
-            isPresented: $todoListViewModel.isDisplayTodoForRemoveAlert
+            isPresented: $todoListViewModel.isDisplayTodoForRemove
         ) {
             Button("delete", role: .destructive) {
                 todoListViewModel.removeTodo()
@@ -152,7 +152,7 @@ private struct TodoCellView: View {
                         .foregroundColor(todo.selected ? .customIconGray : .customBlack)
                         .strikethrough(todo.selected)
                     
-                    Text(todo.comvertedDayAndTime)
+                    Text(todo.convertedDayAndTime)
                         .font(.system(size: 16))
                         .foregroundColor(.customIconGray)
                 }

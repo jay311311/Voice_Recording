@@ -14,7 +14,6 @@ struct CustomNavigationBar: View {
     let leftBtnAction:() -> Void
     let rightBtnAction:() -> Void
     let rightBtnType: NavigationBtnType
-//    @State private var showingAlert = true
 
     init(
         isDisplayLeftBtn: Bool = true,
@@ -22,13 +21,11 @@ struct CustomNavigationBar: View {
         leftBtnAction: @escaping () -> Void = {},
         rightBtnAction: @escaping () -> Void = {},
         rightBtnType: NavigationBtnType = .edit) {
-//        showingAlert: Bool = false
         self.isDisplayLeftBtn = isDisplayLeftBtn
         self.isDisplayRightBtn = isDisplayRightBtn
         self.leftBtnAction = leftBtnAction
         self.rightBtnAction = rightBtnAction
         self.rightBtnType = rightBtnType
-//        _showingAlert = State(initialValue: showingAlert)
     }
     
     var body: some View{

@@ -11,7 +11,7 @@ class TodoListViewModel: ObservableObject {
     @Published var todos: [TodoModel]
     @Published var isEditTodoMode: Bool
     @Published var todosForRemove: [TodoModel]
-    @Published var isDisplayTodoForRemoveAlert: Bool
+    @Published var isDisplayTodoForRemove: Bool
     
     var todosForRemoveCount: Int {
         return todosForRemove.count
@@ -25,12 +25,12 @@ class TodoListViewModel: ObservableObject {
         todos: [TodoModel] = [],
         isEditModeForTodo: Bool = false,
         todosForRemove: [TodoModel] = [],
-        isDisplayRemoveTodoAlert: Bool = false
+        isDisplayTodoForRemove: Bool = false
     ) {
         self.todos = todos
         self.isEditTodoMode = isEditModeForTodo
         self.todosForRemove = todosForRemove
-        self.isDisplayTodoForRemoveAlert = isDisplayRemoveTodoAlert
+        self.isDisplayTodoForRemove = isDisplayTodoForRemove
     }
 }
 
@@ -58,7 +58,7 @@ extension TodoListViewModel {
     }
     
     func setIsDisplayTodoForRemoveAlert(_ isDisplay: Bool) {
-        isDisplayTodoForRemoveAlert = isDisplay
+        isDisplayTodoForRemove = isDisplay
     }
     
     func selectRemoveBtn(_ todo: TodoModel) {
@@ -76,8 +76,6 @@ extension TodoListViewModel {
         todosForRemove.removeAll()
         isEditTodoMode = false
     }
-    
-    
 }
 
 
